@@ -1,0 +1,24 @@
+{
+  "name": "frameworkjs",
+  "version": "1.0.0",
+  "description": "Pure JavaScript Excel Application",
+  "main": "webpack.config.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/ratov/FrameworkJS.git"
+  },
+  "keywords": [
+    "js",
+    "javascript",
+    "excel"
+  ],
+  "author": "Ratov Kirill <ratov-kirill84@yandex.ru>",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/ratov/FrameworkJS/issues"
+  },
+  "homepage": "https://github.com/ratov/FrameworkJS#readme"
+}
