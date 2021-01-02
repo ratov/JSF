@@ -15,46 +15,16 @@ const jsLoaders = () => {
     {
       loader: 'babel-loader',
       options: {
-        presets: ['@babel/preset-env']
+        presets: ['@babel/preset-env'],
+        plugins: ['@babel/plugin-proposal-class-properties']
       }
     }
   ]
-  if (isDev) {
-    loaders.push('eslint-loader')
-  }
+  // if (isDev) {
+  //   loaders.push('eslint-loader')
+  // }
   return loaders
 }
-
-// "scripts": {
-//   "dev": "cross-env NODE_ENV=development webpack --mode development",
-//     "build": "cross-env NODE_ENV=production webpack --mode production",
-//     "watch": "cross-env NODE_ENV=development webpack --mode development --watch",
-//     "start": "cross-env NODE_ENV=development webpack serve --mode development"
-// },
-
-// const cssLoaders = extra => {
-//   const loaders = [
-//     {
-//       loader: MiniCssExtractPlugin.loader,
-//       options: {
-//         publicPath: path.resolve(__dirname, 'dist'),
-//       },
-//     },
-//     'css-loader'
-//   ]
-//   if (extra) {
-//     loaders.push(extra)
-//   }
-//   return loaders;
-// }
-//
-//
-// if (isDev) {
-//   // only enable hot in development
-//   plugins.push(new webpack.HotModuleReplacementPlugin());
-// }
-
-//Смотреть lesson 16
 
 module.exports = {
   context: path.resolve(__dirname, 'src'),
